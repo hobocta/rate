@@ -7,3 +7,8 @@
 .item:first-child {
 	margin-top: 0;
 }
+.item__title {
+}
+.item__content {
+	margin-top: .5em;
+}

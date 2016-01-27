@@ -1,55 +1,55 @@
 (function($) {
 	$(document).ready(function() {
 
-		// функция выделяет переданное (rate) количество звёзд в рейтинге (wrapper)
-		function changeRateView(wrapper, rate) {
-			var activeClass = 'rate__star--active';
+		// функция выделяет переданное (starrating) количество звёзд в рейтинге (wrapper)
+		function changeStarRatingView(wrapper, starrating) {
+			var activeClass = 'starrating__item--active';
 
 			// сбрасываем предыдущий рейтинг
 			for (var i = 5; i > 0; i--) {
-				wrapper.removeClass('rate--active-' + i);
+				wrapper.removeClass('starrating--active-' + i);
 			}
 
 			// устанавливаем новый рейтинг
-			wrapper.addClass('rate--active-' + rate);
+			wrapper.addClass('starrating--active-' + starrating);
 		}
 
-		// функция сохраняет отправляет на сервер и запускает changeRateView
-		function saveRate(wrapper, rate) {
+		// функция сохраняет отправляет на сервер и запускает changeStarRatingView
+		function saveStarRating(wrapper, starrating) {
 
 			// тут мы сохраняем новый рейтинг (вероятно с помощью ajax)
-			console.log('Сохраняем новый рейтинг = ' + rate);
+			console.log('Сохраняем новый рейтинг = ' + starrating);
 
 			// записываем сохранённый рейтинг в атрибут
-			wrapper.data('rate', rate);
+			wrapper.data('starrating', starrating);
 
 			// обновляем звёздочки визуально
-			changeRateView(wrapper, rate);
+			changeStarRatingView(wrapper, starrating);
 		}
 
 		// по клику на звезду - сохраняем новый рейтинг
-		$('.rate--input .rate__star').on('click', function() {
+		$('.starrating--input .starrating__item').on('click', function() {
 			var wrapper = $(this).parent();
-			var rate = $(this).data('rate');
+			var starrating = $(this).data('starrating');
 
 			// сохраняем новый рейтинг
-			saveRate(wrapper, rate);
+			saveStarRating(wrapper, starrating);
 		});
 
 		// по наведению на звезду - показываем как мог бы выглядеть рейтинг
-		$('.rate--input .rate__star').on('mouseenter', function() {
+		$('.starrating--input .starrating__item').on('mouseenter', function() {
 			var wrapper = $(this).parent();
-			var rate = $(this).data('rate');
+			var starrating = $(this).data('starrating');
 
-			changeRateView(wrapper, rate);
+			changeStarRatingView(wrapper, starrating);
 		});
 
 		// по уходу курсора от обёртки рейтинга - обновляем рейтинг визуально
-		$('.rate--input .rate__star').on('mouseleave', function() {
+		$('.starrating--input .starrating__item').on('mouseleave', function() {
 			var wrapper = $(this).parent();
-			var rate = wrapper.data('rate');
+			var starrating = wrapper.data('starrating');
 
-			changeRateView(wrapper, rate);
+			changeStarRatingView(wrapper, starrating);
 		});
 
 	});

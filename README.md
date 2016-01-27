@@ -1,5 +1,3 @@
-# Rate
+Звёздный рейтинг :)
 
-Звёздочки рейтинга.
-
-![Скриншот](http://tinyurl.com/j7ry8cb)
+![Скриншот](http://tinyurl.com/h92vplc)

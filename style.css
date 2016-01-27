@@ -1,29 +1,32 @@
-.rate__star {
+.starrating__item {
+	font-size: 120%;
 	display: block;
 	float: left;
-	width: 18px;
-	height: 16px;
+	padding-left: 4px;
 }
-.rate--input .rate__star {
+.starrating__item:first-child {
+	padding-left: 0;
+}
+.starrating--input .starrating__item {
 	cursor: pointer;
 }
-.rate__star {
+.starrating__item {
 	color: silver;
 }
-.rate--active-1 .rate__star--1,
-.rate--active-2 .rate__star--1,
-.rate--active-2 .rate__star--2,
-.rate--active-3 .rate__star--1,
-.rate--active-3 .rate__star--2,
-.rate--active-3 .rate__star--3,
-.rate--active-4 .rate__star--1,
-.rate--active-4 .rate__star--2,
-.rate--active-4 .rate__star--3,
-.rate--active-4 .rate__star--4,
-.rate--active-5 .rate__star--1,
-.rate--active-5 .rate__star--2,
-.rate--active-5 .rate__star--3,
-.rate--active-5 .rate__star--4,
-.rate--active-5 .rate__star--5 {
+.starrating--active-1 .starrating__item--1,
+.starrating--active-2 .starrating__item--1,
+.starrating--active-2 .starrating__item--2,
+.starrating--active-3 .starrating__item--1,
+.starrating--active-3 .starrating__item--2,
+.starrating--active-3 .starrating__item--3,
+.starrating--active-4 .starrating__item--1,
+.starrating--active-4 .starrating__item--2,
+.starrating--active-4 .starrating__item--3,
+.starrating--active-4 .starrating__item--4,
+.starrating--active-5 .starrating__item--1,
+.starrating--active-5 .starrating__item--2,
+.starrating--active-5 .starrating__item--3,
+.starrating--active-5 .starrating__item--4,
+.starrating--active-5 .starrating__item--5 {
 	color: orange;
 }
