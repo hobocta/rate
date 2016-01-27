@@ -1,0 +1,29 @@
+.rate__star {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 16px;
+}
+.rate--input .rate__star {
+	cursor: pointer;
+}
+.rate__star {
+	color: silver;
+}
+.rate--active-1 .rate__star--1,
+.rate--active-2 .rate__star--1,
+.rate--active-2 .rate__star--2,
+.rate--active-3 .rate__star--1,
+.rate--active-3 .rate__star--2,
+.rate--active-3 .rate__star--3,
+.rate--active-4 .rate__star--1,
+.rate--active-4 .rate__star--2,
+.rate--active-4 .rate__star--3,
+.rate--active-4 .rate__star--4,
+.rate--active-5 .rate__star--1,
+.rate--active-5 .rate__star--2,
+.rate--active-5 .rate__star--3,
+.rate--active-5 .rate__star--4,
+.rate--active-5 .rate__star--5 {
+	color: orange;
+}

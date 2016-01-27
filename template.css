@@ -1,0 +1,9 @@
+.list {
+	margin: 1em;
+}
+.item {
+	margin-top: 1em;
+}
+.item:first-child {
+	margin-top: 0;
+}
